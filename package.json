@@ -1,0 +1,44 @@
+{
+  "name": "nodets-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start:dev": "nodemon",
+    "build": "rimraf ./build && tsc",
+    "start": "npm run build && node build/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neophytz/nodets-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/neophytz/nodets-api/issues"
+  },
+  "homepage": "https://github.com/neophytz/nodets-api#readme",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.2",
+    "express": "^4.18.1",
+    "express-rate-limit": "^6.6.0",
+    "http-status-codes": "^2.2.0",
+    "mongoose": "^6.6.2",
+    "zod": "^3.19.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.14",
+    "@types/express-rate-limit": "^6.0.0",
+    "@types/http-status-codes": "^1.2.0",
+    "@types/mongoose": "^5.11.97",
+    "@types/node": "^18.8.3",
+    "nodemon": "^2.0.20",
+    "rimraf": "^3.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.3"
+  }
+}
